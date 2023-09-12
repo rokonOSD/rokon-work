@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseduo class and pseduo element</title>
+    <style>
+        p:nth-child(2){
+            background: black;
+            color: white;
+        }
+        li:last-of-type{
+            background-color: black;
+            color: aqua;
+        }
+
+        p::first-line{
+            color: brown;
+            font-size: 3rem;
+        }
+        ::selection{
+            color: blue;
+            background-color: green;
+        }
+        .demo::before ,.demo::after{
+            content: '';
+            width: 50%;
+            height: 20px;
+            background-color: black;
+            display: inline-block;
+
+
+        }
+     
+    </style>
+</head>
+<body>
+    <div class="demo">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab, hic?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab, hic?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab, hic?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab, hic?</p>
+    </div>
+    <ul>
+        <li>Home 1</li>
+        <li>Home 2</li>
+        <li>Home 3</li>
+        <li>Home 4</li>
+        <li>Home 5</li>
+    </ul>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. .</p>
+    <p>Morem ipsum dolor sit amet consectetur adipisicing elit. .</p>
+    <p>Oorem ipsum dolor sit amet consectetur adipisicing elit. .</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum numquam deleniti quidem molestias accusamus, similique rem! At cum sed deleniti aliquam officia! Expedita sint quas fugiat laboriosam incidunt quaerat dignissimos!</p>
+</body>
+</html>

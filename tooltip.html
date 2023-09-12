@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>overflow and Tooltip</title>
+    <style>
+        div{
+            height: 100px;
+            width: 250px;
+            border: 1px solid red;
+            background-color: green;
+            overflow: scroll;
+
+        }
+        .tooltip-text{
+
+           visibility:hidden ;
+           width: 150px;
+           background-color: blue;
+           color: white;
+           padding: 10px;
+           border-radius: 5px;
+           position: absolute;
+           top: 20px;
+           left:30px;
+           z-index: 1;
+
+
+
+        }
+
+        .tooltip:hover .tooltip-text{
+            visibility: visible;
+        }
+    </style>
+
+</head>
+<body>
+    
+    <a href="#" class="tooltip">Facebook
+        <span class="tooltip-text">Facebook is a social media</span>
+    </a>
+
+    <br><br>
+    <div>Sanctus eos gubergren et amet diam ea sanctus, justo elitr gubergren ut sanctus aliquyam est dolor vero. Et stet sanctus lorem et diam elitr et amet. Aliquyam duo sanctus aliquyam sadipscing nonumy. Consetetur amet sed dolore dolor justo est. Magna elitr tempor ea at rebum nonumy. No diam duo kasd.</div>
+    
+</body>
+</html>
